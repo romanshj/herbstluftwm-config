@@ -6,13 +6,11 @@ picom_conf=$HOME/.config/picom.conf;
 
 
 if [[ -d $hc_dir  ]] ; then
-	mkdir herbstluftwm
-	cp -r $hc_dir ./herbstluftwm
+	cp -r $hc_dir ./
 fi
 
 if [[ -d $polybar_dir ]] ; then
-	mkdir polybar
-	cp -r $polybar_dir ./polybar
+	cp -r $polybar_dir ./
 fi
 
 if [[ -f $picom_conf ]] ; then
