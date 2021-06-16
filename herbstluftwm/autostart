@@ -14,10 +14,9 @@ picom --config ~/.config/picom.conf &
 killall xfce4-power-manage
 xfce4-power-manager &
 #;;
-killall cbatticon
-cbatticon &
-#;;
+killall polybar
 bash ~/.config/polybar/launch.sh &
+#;;
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # remove all existing keybindings
