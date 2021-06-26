@@ -30,15 +30,15 @@ Mod=Mod4   # Use the super key as the main modifier
 hc keybind $Mod-Shift-q quit
 hc keybind $Mod-Shift-r reload
 hc keybind $Mod-q close
-hc keybind $Mod-x spawn "${TERMINAL:-xfce4-terminal}" # use your $TERMINAL with xterm as fallback
+hc keybind $Mod-x spawn "${TERMINAL:-alacritty}" # use your $TERMINAL with xterm as fallback
 
 # Customs
 hc keybind $Mod-w spawn brave
-hc keybind $Mod-z spawn thunar
+hc keybind $Mod-z spawn doublecmd &
 hc keybind $Mod-e spawn $HOME/.config/polybar/forest/scripts/powermenu.sh
 hc keybind $Mod-d spawn $HOME/.config/polybar/forest/scripts/launcher.sh
-hc keybind Alt-Tab spawn rofi -modi window -show window -show-icons font "Droid Sans Regular 10"
-
+hc keybind Alt-Tab spawn rofi -show windowcd -show-icons -font "Droid Sans Regular 12"
+hc keybind Print   spawn flameshot gui
 
 # Layout settings
 setxkbmap -layout us,ru,ua
@@ -139,7 +139,7 @@ hc keybind $Mod-i jumpto urgent
 # theme
 hc attr theme.tiling.reset 1
 hc attr theme.floating.reset 1
-hc set frame_border_active_color '#383C4A33'
+hc set frame_border_active_color '#DC140Cff' #383C4A33
 hc set frame_border_normal_color '#101010cc'
 hc set frame_bg_normal_color '#565656aa'
 hc set frame_bg_active_color '#383C4Aaa'
@@ -161,7 +161,7 @@ hc attr theme.urgent.color '#7811A1dd'
 hc attr theme.normal.title_color '#898989'
 hc attr theme.inner_width 0
 hc attr theme.inner_color black
-hc attr theme.border_width 1
+hc attr theme.border_width 2
 hc attr theme.floating.border_width 0
 hc attr theme.floating.outer_width 0
 hc attr theme.floating.outer_color black
