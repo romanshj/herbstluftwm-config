@@ -34,7 +34,7 @@ hc keybind $Mod-x spawn "${TERMINAL:-alacritty}" # use your $TERMINAL with xterm
 
 # Customs
 hc keybind $Mod-w spawn brave
-hc keybind $Mod-z spawn doublecmd &
+hc keybind $Mod-z spawn sunflower &
 hc keybind $Mod-e spawn $HOME/.config/polybar/forest/scripts/powermenu.sh
 hc keybind $Mod-d spawn $HOME/.config/polybar/forest/scripts/launcher.sh
 hc keybind Alt-Tab spawn rofi -show windowcd -show-icons -font "Droid Sans Regular 12"
@@ -84,7 +84,7 @@ hc keybind $Mod-Control-Up      resize up +$resizestep
 hc keybind $Mod-Control-Right   resize right +$resizestep
 
 # XF86AudioMute
-hc keybind XF86AudioMute 	spawn pactl -- set-sink-volume 0 0%
+hc keybind XF86AudioMute 	spawn pactl -- set-sink-mute 0 toggle
 hc keybind XF86AudioLowerVolume spawn pactl -- set-sink-volume 0 -5%
 hc keybind XF86AudioRaiseVolume spawn pactl -- set-sink-volume 0 +5%
 
