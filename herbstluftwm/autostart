@@ -37,7 +37,7 @@ hc keybind $Mod-w spawn brave
 hc keybind $Mod-z spawn sunflower &
 hc keybind $Mod-e spawn $HOME/.config/polybar/forest/scripts/powermenu.sh
 hc keybind $Mod-d spawn $HOME/.config/polybar/forest/scripts/launcher.sh
-hc keybind Alt-Tab spawn rofi -show windowcd -show-icons -font "Droid Sans Regular 12"
+hc keybind Alt-Tab spawn rofi -show window -show-icons -font "Droid Sans Regular 12"
 hc keybind Print   spawn flameshot gui
 
 # Layout settings
